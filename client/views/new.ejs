@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Epic Button Game</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper brown">
+            <a href="#" class="brand-logo">African Wildlife</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/new">New Animal</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row center">
+            <form action="/animal" method="post">
+                <div class="input-field">
+                    <input type="text" name="name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="lifespan">
+                    <label for="lifespan">Life Span</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="habbitat">
+                    <label for="habbitat">Habbitat</label>
+                </div>
+                <input type="submit" name="submit" class="btn" value="Add Animal">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
